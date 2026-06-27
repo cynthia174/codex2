@@ -2,12 +2,14 @@ FROM node:20-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
-RUN apk add --no-cache libc6-compat && yarn global add pnpm
+RUN apk add --no-cache libc6-compat && \
+    corepack enable && \
+    corepack prepare pnpm@10.28.2 --activate
 
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
-COPY package.json pnpm-lock.yaml* source.config.ts next.config.mjs ./
+COPY package.json pnpm-lock.yaml* .npmrc source.config.ts next.config.mjs ./
 RUN pnpm i --frozen-lockfile
 
 # Rebuild the source code only when needed
