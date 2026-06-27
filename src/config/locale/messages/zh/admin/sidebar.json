@@ -1,10 +1,10 @@
 {
   "header": {
     "brand": {
-      "title": "ShipAny Two",
+      "title": "ProductPic AI",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny Two"
+        "alt": "ProductPic AI"
       },
       "url": "/admin"
     },
@@ -57,7 +57,7 @@
           "icon": "DollarSign",
           "children": [
             {
-              "title": "支付",
+              "title": "支付记录",
               "url": "/admin/payments",
               "icon": "DollarSign"
             },
@@ -79,7 +79,7 @@
       "title": "业务",
       "items": [
         {
-          "title": "AI任务",
+          "title": "AI 任务",
           "url": "/admin/ai-tasks",
           "icon": "Brain"
         },
@@ -99,7 +99,7 @@
         "icon": "Settings"
       },
       {
-        "title": "API密钥",
+        "title": "API 密钥",
         "url": "/admin/apikeys",
         "icon": "Key"
       }
@@ -136,7 +136,7 @@
           "target": "_blank"
         },
         {
-          "title": "推特",
+          "title": "X",
           "url": "https://twitter.com/your-app-name",
           "icon": "RiTwitterXFill",
           "target": "_blank"
@@ -148,7 +148,7 @@
           "target": "_blank"
         },
         {
-          "title": "邮箱",
+          "title": "邮件",
           "url": "mailto:support@your-domain.com",
           "icon": "Mail",
           "target": "_blank"

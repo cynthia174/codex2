@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "title": "ProductPic AI",
+    "description": "通过 AI 预设、参考图上传和渠道裁切，快速生成可直接上架的商品图。"
+  },
+  "page": {
+    "title": "ProductPic AI",
+    "description": "为电商平台、独立站和社交电商活动生成精修级商品视觉图。"
+  },
+  "generator": {
+    "title": "商品图工作台",
+    "subtitle": "输入商品信息，选择商用方向，即可生成适合上架的商品视觉图。",
+    "form": {
+      "product": "商品名称",
+      "product_placeholder": "例如：胶原蛋白粉、无线耳机、手工香薰蜡烛",
+      "product_hint": "商品名称尽量具体。",
+      "description": "商品详情",
+      "description_placeholder": "材质、尺寸、包装、颜色、纹理、品类等任何需要保持准确的信息。",
+      "selling_points": "卖点",
+      "selling_points_placeholder": "例如：便携装、航空铝材、香调层次、礼盒包装",
+      "audience": "目标用户",
+      "audience_placeholder": "例如：忙碌的白领、护肤消费人群、家庭咖啡爱好者",
+      "references": "参考商品图",
+      "references_placeholder": "拖拽图片到此处，或点击选择本地文件",
+      "references_drop": "松开即可上传",
+      "references_upload": "选择图片",
+      "references_uploading": "上传中...",
+      "references_failed": "上传失败",
+      "references_limit": "支持 JPG、PNG、WebP、GIF，最多 14 张，单张不超过 10MB",
+      "references_replace": "替换图片",
+      "references_remove": "删除图片",
+      "references_error": "部分图片上传失败，请删除后重新上传。"
+    },
+    "style": {
+      "title": "风格",
+      "options": {
+        "marketplace-clean": {
+          "title": "平台白底",
+          "description": "清晰的棚拍灯光和准确的商品细节。"
+        },
+        "luxury-editorial": {
+          "title": "奢华编辑",
+          "description": "高级广告氛围，留白克制、质感优雅。"
+        },
+        "dtc-minimal": {
+          "title": "DTC 极简",
+          "description": "现代品牌感，阴影柔和、画面克制。"
+        },
+        "social-ad": {
+          "title": "社媒广告",
+          "description": "更抓眼的创意构图和强视觉层级。"
+        },
+        "natural-organic": {
+          "title": "自然有机",
+          "description": "暖光、触感道具和可信的清新感。"
+        },
+        "tech-premium": {
+          "title": "科技高级",
+          "description": "利落反射与精确棚拍质感。"
+        }
+      }
+    },
+    "background": {
+      "title": "背景",
+      "options": {
+        "pure-white": {
+          "title": "纯白背景",
+          "description": "适合平台主图，带轻微接触阴影。"
+        },
+        "soft-gradient": {
+          "title": "柔和渐变",
+          "description": "适合品牌视觉的中性棚拍深度。"
+        },
+        "stone-marble": {
+          "title": "石材台面",
+          "description": "高级台面纹理与自然反射。"
+        },
+        "home-lifestyle": {
+          "title": "居家生活",
+          "description": "真实家居场景，商品自然摆放。"
+        },
+        "botanical": {
+          "title": "植物清新",
+          "description": "少量自然绿植点缀，不过度杂乱。"
+        },
+        "urban-neon": {
+          "title": "都市霓虹",
+          "description": "现代色彩点缀与电影感对比。"
+        },
+        "holiday-campaign": {
+          "title": "节日营销",
+          "description": "礼品感场景，节日元素保持克制。"
+        },
+        "outdoor-sun": {
+          "title": "户外阳光",
+          "description": "明亮生活方式光线和向往感。"
+        }
+      }
+    },
+    "composition": {
+      "title": "构图",
+      "options": {
+        "center-hero": {
+          "title": "居中主图",
+          "description": "商品完整可见，边距均衡。"
+        },
+        "three-quarter": {
+          "title": "四分之三视角",
+          "description": "展示厚度、透视和真实接触阴影。"
+        },
+        "flat-lay": {
+          "title": "俯拍平铺",
+          "description": "整齐俯拍，辅以少量道具。"
+        },
+        "macro-detail": {
+          "title": "细节特写",
+          "description": "材质纹理和工艺质感的近景展示。"
+        },
+        "bundle-scene": {
+          "title": "套装场景",
+          "description": "主商品搭配包装或组合单品。"
+        }
+      }
+    },
+    "channel": {
+      "title": "渠道",
+      "options": {
+        "amazon": {
+          "title": "Amazon",
+          "description": "可信、清晰的平台列表图。"
+        },
+        "shopify": {
+          "title": "Shopify",
+          "description": "适合商品详情页的转化主图。"
+        },
+        "instagram": {
+          "title": "Instagram",
+          "description": "适合信息流和付费广告的生活方式画面。"
+        },
+        "xiaohongshu": {
+          "title": "小红书",
+          "description": "更偏种草感的社交电商画面。"
+        }
+      }
+    },
+    "ratio": {
+      "title": "比例",
+      "options": {
+        "1:1": "1:1 正方形",
+        "4:5": "4:5 社媒",
+        "3:4": "3:4 详情页",
+        "16:9": "16:9 横幅"
+      }
+    },
+    "quality": {
+      "title": "质量"
+    },
+    "actions": {
+      "checking": "正在检查账户...",
+      "generating": "正在生成商品图...",
+      "generate": "生成商品图",
+      "sign_in": "登录后生成",
+      "buy_credits": "购买积分",
+      "download": "下载"
+    },
+    "credits": {
+      "cost": "消耗 {credits} 积分",
+      "remaining": "剩余 {credits} 积分"
+    },
+    "status": {
+      "pending": "等待模型开始处理",
+      "processing": "正在构建商用商品场景",
+      "success": "商品图已生成",
+      "failed": "生成失败"
+    },
+    "messages": {
+      "generated": "商品图生成成功",
+      "downloaded": "图片已下载"
+    },
+    "errors": {
+      "timeout": "生成超时，请重试。",
+      "query_failed": "查询任务失败",
+      "generate_failed": "生成商品图失败",
+      "insufficient_credits": "积分不足，请先充值再继续创作。",
+      "download_failed": "下载图片失败"
+    },
+    "preview": {
+      "title": "预览",
+      "subtitle": "生成完成后，结果会立即显示在这里。",
+      "empty": "还没有商品图",
+      "empty_hint": "输入商品信息，选择商用方向，然后开始生成。",
+      "image_alt": "AI 生成的电商商品图"
+    }
+  }
+}

@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "ShipAny Chat",
+        "title": "ProductPic AI Chat",
         "logo": {
           "src": "/logo.png",
-          "alt": "ShipAny Chat"
+          "alt": "ProductPic AI Chat"
         },
         "url": "/chat"
       },
@@ -23,7 +23,7 @@
       {
         "items": [
           {
-            "title": "历史对话",
+            "title": "历史记录",
             "icon": "History",
             "url": "/chat/history"
           }
@@ -65,7 +65,7 @@
             "target": "_blank"
           },
           {
-            "title": "推特",
+            "title": "X",
             "url": "https://twitter.com/your-app-name",
             "icon": "RiTwitterXFill",
             "target": "_blank"
@@ -77,7 +77,7 @@
             "target": "_blank"
           },
           {
-            "title": "邮箱",
+            "title": "邮件",
             "url": "mailto:support@your-domain.com",
             "icon": "Mail",
             "target": "_blank"
@@ -90,7 +90,7 @@
     "variant": "sidebar"
   },
   "library": {
-    "title": "历史对话",
+    "title": "历史记录",
     "icon": "History",
     "url": "/chat/history",
     "more": "更多",
@@ -101,21 +101,21 @@
     }
   },
   "generator": {
-    "title": "今天有什么可以帮到你？",
-    "input_placeholder": "你可以问我任何问题"
+    "title": "今天想生成什么？",
+    "input_placeholder": "可以直接输入你的需求"
   },
   "history": {
-    "title": "历史对话",
-    "description": "查看你之前的对话。",
-    "empty": "暂无对话记录。",
-    "error": "加载对话列表失败。",
+    "title": "对话历史",
+    "description": "查看并继续你之前的对话。",
+    "empty": "暂时还没有对话。",
+    "error": "加载对话失败。",
     "retry": "重试",
-    "signin": "登录后可查看历史对话。",
-    "summary": "正在显示第 {from}-{to} 条，共 {total} 条",
+    "signin": "登录后可查看你的对话历史。",
+    "summary": "显示 {from}-{to} 条，共 {total} 条",
     "perPage": "每页",
     "prev": "上一页",
     "next": "下一页",
-    "open": "进入对话",
+    "open": "打开对话",
     "untitled": "未命名对话"
   }
 }

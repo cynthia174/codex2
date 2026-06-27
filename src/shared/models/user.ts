@@ -8,6 +8,9 @@ import { user } from '@/config/db/schema';
 import { Permission, Role } from '../services/rbac';
 import { getRemainingCredits } from './credit';
 
+const LOCAL_GUEST_EMAIL = 'local-guest@ecomstudio.local';
+const LOCAL_GUEST_NAME = 'Local Guest';
+
 export interface UserCredits {
   remainingCredits: number;
   expiresAt: Date | null;
@@ -96,8 +99,37 @@ export async function getSignUser() {
   return session?.user;
 }
 
+export async function getOrCreateLocalGuestUser() {
+  const [existing] = await db()
+    .select()
+    .from(user)
+    .where(eq(user.email, LOCAL_GUEST_EMAIL));
+
+  if (existing) {
+    return existing;
+  }
+
+  const [created] = await db()
+    .insert(user)
+    .values({
+      id: `guest_${Date.now()}`,
+      name: LOCAL_GUEST_NAME,
+      email: LOCAL_GUEST_EMAIL,
+      emailVerified: true,
+      image: '',
+      utmSource: 'local',
+      ip: '',
+      locale: 'zh',
+    })
+    .returning();
+
+  return created;
+}
+
 export async function isEmailVerified(email: string): Promise<boolean> {
-  const normalized = String(email || '').trim().toLowerCase();
+  const normalized = String(email || '')
+    .trim()
+    .toLowerCase();
   if (!normalized) return false;
 
   const [row] = await db()

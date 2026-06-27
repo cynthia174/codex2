@@ -7,8 +7,10 @@ export type ConfigMap = Record<string, string>;
 
 export const envConfigs: ConfigMap = {
   app_url: process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
-  app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'ShipAny App',
-  app_description: process.env.NEXT_PUBLIC_APP_DESCRIPTION ?? '',
+  app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'ProductPic AI',
+  app_description:
+    process.env.NEXT_PUBLIC_APP_DESCRIPTION ??
+    'AI ecommerce image generator for marketplace-ready product visuals',
   app_logo: process.env.NEXT_PUBLIC_APP_LOGO ?? '/logo.png',
   app_favicon: process.env.NEXT_PUBLIC_APP_FAVICON ?? '/favicon.ico',
   app_preview_image:
@@ -33,8 +35,12 @@ export const envConfigs: ConfigMap = {
     process.env.DB_MIGRATIONS_OUT ?? './src/config/db/migrations',
   db_singleton_enabled: process.env.DB_SINGLETON_ENABLED || 'false',
   db_max_connections: process.env.DB_MAX_CONNECTIONS || '1',
-  auth_url: process.env.AUTH_URL || process.env.NEXT_PUBLIC_APP_URL || '',
-  auth_secret: process.env.AUTH_SECRET ?? '', // openssl rand -base64 32
+  auth_url:
+    process.env.BETTER_AUTH_URL ||
+    process.env.AUTH_URL ||
+    process.env.NEXT_PUBLIC_APP_URL ||
+    '',
+  auth_secret: process.env.BETTER_AUTH_SECRET || process.env.AUTH_SECRET || '', // openssl rand -base64 32
   version: packageJson.version,
   locale_detect_enabled:
     process.env.NEXT_PUBLIC_LOCALE_DETECT_ENABLED ?? 'false',

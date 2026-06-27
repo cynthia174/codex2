@@ -1,23 +1,23 @@
 {
   "metadata": {
     "title": "案例展示",
-    "description": "用 ShipAny 打造的精彩项目"
+    "description": "查看使用 ProductPic AI 制作的电商图与 AI 视觉案例"
   },
   "page": {
     "title": "案例展示",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "用 ShipAny 构建的 AI SaaS 创业项目",
-        "description": "简单、快速、高效。",
+        "title": "使用 ProductPic AI 制作的作品",
+        "description": "快速生成适合电商投放、详情页和品牌宣传的视觉内容。",
         "groups": [
           {
             "name": "all",
-            "title": "所有项目"
+            "title": "全部"
           },
           {
             "name": "ai-chatbot",
-            "title": "AI 聊天机器人"
+            "title": "AI 对话"
           },
           {
             "name": "ai-image",
@@ -47,7 +47,7 @@
         "items": [
           {
             "title": "ThinkAny",
-            "description": "AI 搜索引擎",
+            "description": "AI 搜索体验",
             "url": "https://thinkany.ai",
             "target": "_blank",
             "image": {
@@ -58,7 +58,7 @@
           },
           {
             "title": "HeyBeauty",
-            "description": "AI 虚拟试妆",
+            "description": "AI 虚拟试穿",
             "url": "https://heybeauty.ai",
             "target": "_blank",
             "image": {
@@ -91,7 +91,7 @@
           },
           {
             "title": "GPTs Works",
-            "description": "GPTs 导航",
+            "description": "GPTs 目录",
             "url": "https://gpts.works",
             "target": "_blank",
             "image": {

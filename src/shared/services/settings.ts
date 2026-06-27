@@ -232,6 +232,12 @@ export async function getSettingGroups() {
       tab: 'ai',
     },
     {
+      name: 'evolink',
+      title: 'Evolink',
+      description: `Custom <a href="https://evolink.ai" class="text-primary" target="_blank">Evolink</a> settings`,
+      tab: 'ai',
+    },
+    {
       name: 'kie',
       title: 'Kie',
       description: `Custom <a href="https://kie.ai" class="text-primary" target="_blank">Kie</a> settings`,
@@ -817,6 +823,24 @@ export async function getSettings() {
       placeholder: 'AIza...',
       group: 'gemini',
       tip: 'Google Gemini API Key',
+      tab: 'ai',
+    },
+    {
+      name: 'evolink_api_key',
+      title: 'Evolink API Key',
+      type: 'password',
+      placeholder: 'sk-xxx',
+      group: 'evolink',
+      tip: 'Evolink API Key for Nano Banana 2 image generation',
+      tab: 'ai',
+    },
+    {
+      name: 'evolink_base_url',
+      title: 'Evolink Base URL',
+      type: 'url',
+      placeholder: 'https://api.evolink.ai',
+      group: 'evolink',
+      tip: 'Leave empty to use the default Evolink API URL',
       tab: 'ai',
     },
     {

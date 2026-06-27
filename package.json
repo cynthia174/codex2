@@ -1,24 +1,22 @@
 {
-  "name": "shipany-template-two",
+  "name": "productpic-ai",
   "version": "1.8.2",
   "private": true,
-  "author": "ShipAny.ai",
-  "homepage": "https://shipany.ai",
+  "author": "cynthia174",
+  "homepage": "https://github.com/cynthia174/codex2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shipanyai/shipany-template-two"
+    "url": "git+ssh://git@github.com/cynthia174/codex2.git"
   },
   "keywords": [
-    "shipany",
-    "shipany-two",
-    "shipany-template-two",
-    "ai-saas-boilerplate",
-    "ai-saas-template",
-    "ai-saas-framework",
-    "ai-saas-development"
+    "productpic-ai",
+    "ecommerce-image-generator",
+    "ai-product-photography",
+    "nano-banana-2",
+    "nextjs-saas"
   ],
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "node scripts/dev-server.mjs",
     "build": "next build",
     "build:fast": "NODE_OPTIONS='--max-old-space-size=4096' next build",
     "start": "next start",

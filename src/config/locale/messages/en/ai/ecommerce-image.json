@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "title": "ProductPic AI",
+    "description": "Generate store-ready product images with preset styles, reference uploads, and channel-specific crops."
+  },
+  "page": {
+    "title": "ProductPic AI",
+    "description": "Create polished product visuals for marketplaces, Shopify stores, and social commerce campaigns."
+  },
+  "generator": {
+    "title": "Product Image Studio",
+    "subtitle": "Describe the product, choose a commercial direction, and generate a store-ready visual.",
+    "form": {
+      "product": "Product",
+      "product_placeholder": "e.g. collagen peptide powder, wireless earbuds, handmade scented candle",
+      "product_hint": "Keep the product name concrete.",
+      "description": "Product Details",
+      "description_placeholder": "Materials, size, packaging, color, texture, category, or anything that should stay accurate.",
+      "selling_points": "Selling Points",
+      "selling_points_placeholder": "e.g. travel size, premium aluminum, fragrance notes, gift-ready packaging",
+      "audience": "Target Buyer",
+      "audience_placeholder": "e.g. busy professionals, Gen Z skincare shoppers, home coffee enthusiasts",
+      "references": "Reference Product Images",
+      "references_placeholder": "Drag images here or choose files from your device",
+      "references_drop": "Drop to upload",
+      "references_upload": "Choose Images",
+      "references_uploading": "Uploading...",
+      "references_failed": "Upload failed",
+      "references_limit": "JPG, PNG, WebP, or GIF · Up to 14 images · 10MB each",
+      "references_replace": "Replace image",
+      "references_remove": "Remove image",
+      "references_error": "Some images failed to upload. Remove them and try again."
+    },
+    "style": {
+      "title": "Style",
+      "options": {
+        "marketplace-clean": {
+          "title": "Marketplace Clean",
+          "description": "Sharp catalog lighting and clear product detail."
+        },
+        "luxury-editorial": {
+          "title": "Luxury Editorial",
+          "description": "Premium campaign mood with refined negative space."
+        },
+        "dtc-minimal": {
+          "title": "DTC Minimal",
+          "description": "Modern brand look with soft shadows and restraint."
+        },
+        "social-ad": {
+          "title": "Social Ad",
+          "description": "Scroll-stopping creative with strong hierarchy."
+        },
+        "natural-organic": {
+          "title": "Natural Organic",
+          "description": "Warm daylight, tactile props, and trustworthy freshness."
+        },
+        "tech-premium": {
+          "title": "Tech Premium",
+          "description": "Sleek reflections and precise studio control."
+        }
+      }
+    },
+    "background": {
+      "title": "Background",
+      "options": {
+        "pure-white": {
+          "title": "Pure White",
+          "description": "Clean listing background with subtle contact shadow."
+        },
+        "soft-gradient": {
+          "title": "Soft Gradient",
+          "description": "Neutral studio depth for polished brand imagery."
+        },
+        "stone-marble": {
+          "title": "Stone Marble",
+          "description": "Premium countertop texture and natural reflections."
+        },
+        "home-lifestyle": {
+          "title": "Home Lifestyle",
+          "description": "Realistic home setting with the product staged naturally."
+        },
+        "botanical": {
+          "title": "Botanical",
+          "description": "Fresh natural accents without clutter."
+        },
+        "urban-neon": {
+          "title": "Urban Neon",
+          "description": "Modern color accents and cinematic contrast."
+        },
+        "holiday-campaign": {
+          "title": "Holiday Campaign",
+          "description": "Seasonal giftable scene with restrained props."
+        },
+        "outdoor-sun": {
+          "title": "Outdoor Sun",
+          "description": "Bright lifestyle light and aspirational atmosphere."
+        }
+      }
+    },
+    "composition": {
+      "title": "Composition",
+      "options": {
+        "center-hero": {
+          "title": "Center Hero",
+          "description": "Full product visible with balanced margins."
+        },
+        "three-quarter": {
+          "title": "Three Quarter",
+          "description": "Depth, perspective, and believable contact shadows."
+        },
+        "flat-lay": {
+          "title": "Flat Lay",
+          "description": "Organized top-down layout with supporting props."
+        },
+        "macro-detail": {
+          "title": "Macro Detail",
+          "description": "Close-up material texture and craftsmanship."
+        },
+        "bundle-scene": {
+          "title": "Bundle Scene",
+          "description": "Primary product plus packaging or companion items."
+        }
+      }
+    },
+    "channel": {
+      "title": "Channel",
+      "options": {
+        "amazon": {
+          "title": "Amazon",
+          "description": "Trustworthy marketplace listing image."
+        },
+        "shopify": {
+          "title": "Shopify",
+          "description": "Conversion-focused product detail hero."
+        },
+        "instagram": {
+          "title": "Instagram",
+          "description": "Lifestyle crop for paid social and feeds."
+        },
+        "xiaohongshu": {
+          "title": "Xiaohongshu",
+          "description": "Editorial social commerce visual style."
+        }
+      }
+    },
+    "ratio": {
+      "title": "Ratio",
+      "options": {
+        "1:1": "1:1 Square",
+        "4:5": "4:5 Social",
+        "3:4": "3:4 PDP",
+        "16:9": "16:9 Banner"
+      }
+    },
+    "quality": {
+      "title": "Quality"
+    },
+    "actions": {
+      "checking": "Checking account...",
+      "generating": "Generating product image...",
+      "generate": "Generate Product Image",
+      "sign_in": "Sign In to Generate",
+      "buy_credits": "Buy Credits",
+      "download": "Download"
+    },
+    "credits": {
+      "cost": "Cost {credits} credits",
+      "remaining": "Remaining {credits} credits"
+    },
+    "status": {
+      "pending": "Waiting for the image model",
+      "processing": "Building a commercial product scene",
+      "success": "Product image is ready",
+      "failed": "Generation failed"
+    },
+    "messages": {
+      "generated": "Product image generated successfully",
+      "downloaded": "Image downloaded"
+    },
+    "errors": {
+      "timeout": "Generation timed out. Please try again.",
+      "query_failed": "Failed to query the task",
+      "generate_failed": "Failed to generate product image",
+      "insufficient_credits": "Insufficient credits. Please top up to keep creating.",
+      "download_failed": "Failed to download image"
+    },
+    "preview": {
+      "title": "Preview",
+      "subtitle": "Generated assets appear here as soon as they are ready.",
+      "empty": "No product image yet",
+      "empty_hint": "Enter a product, pick the commercial direction, and start generation.",
+      "image_alt": "Generated ecommerce product image"
+    }
+  }
+}

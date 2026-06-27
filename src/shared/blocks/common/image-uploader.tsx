@@ -22,8 +22,20 @@ interface ImageUploaderProps {
   allowMultiple?: boolean;
   maxImages?: number;
   maxSizeMB?: number;
+  accept?: string;
+  uploadUrl?: string;
   title?: string;
   emptyHint?: string;
+  wideDropzone?: boolean;
+  messages?: {
+    drop?: string;
+    upload?: string;
+    uploading?: string;
+    failed?: string;
+    maxSize?: string;
+    replace?: string;
+    remove?: string;
+  };
   className?: string;
   defaultPreviews?: string[];
   onChange?: (items: ImageUploaderValue[]) => void;
@@ -43,11 +55,11 @@ const formatBytes = (bytes?: number) => {
   return `${mb.toFixed(2)} MB`;
 };
 
-const uploadImageFile = async (file: File) => {
+const uploadImageFile = async (file: File, uploadUrl: string) => {
   const formData = new FormData();
   formData.append('files', file);
 
-  const response = await fetch('/api/storage/upload-image', {
+  const response = await fetch(uploadUrl, {
     method: 'POST',
     body: formData,
   });
@@ -68,8 +80,12 @@ export function ImageUploader({
   allowMultiple = false,
   maxImages = 1,
   maxSizeMB = 10,
+  accept = 'image/*',
+  uploadUrl = '/api/storage/upload-image',
   title,
   emptyHint,
+  wideDropzone = false,
+  messages,
   className,
   defaultPreviews,
   onChange,
@@ -198,7 +214,7 @@ export function ImageUploader({
         })
       );
 
-      uploadImageFile(file)
+      uploadImageFile(file, uploadUrl)
         .then((url) => {
           setItems((prev) =>
             prev.map((item) => {
@@ -321,7 +337,7 @@ export function ImageUploader({
     Promise.all(
       newItems.map(async (item) => {
         try {
-          const url = await uploadImageFile(item.file as File);
+          const url = await uploadImageFile(item.file as File, uploadUrl);
           setItems((prev) => {
             const next = prev.map((current) => {
               if (current.id === item.id) {
@@ -466,14 +482,14 @@ export function ImageUploader({
       {isDragActive && (
         <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center bg-black/10 backdrop-blur-sm">
           <div className="bg-background/80 text-foreground rounded-full px-4 py-2 text-sm font-medium shadow-sm">
-            Drop to upload
+            {messages?.drop || 'Drop to upload'}
           </div>
         </div>
       )}
       <input
         ref={inputRef}
         type="file"
-        accept="image/*"
+        accept={accept}
         multiple={allowMultiple}
         onChange={handleSelect}
         className="hidden"
@@ -519,7 +535,9 @@ export function ImageUploader({
                     variant="secondary"
                     className="bg-background/50 text-foreground hover:bg-background/50 h-10 w-10 rounded-full shadow-sm backdrop-blur focus-visible:ring-2 focus-visible:ring-white/70"
                     onClick={() => openReplacePicker(item.id)}
-                    aria-label="Upload a new image to replace"
+                    aria-label={
+                      messages?.replace || 'Upload a new image to replace'
+                    }
                   >
                     <IconRefresh className="h-5 w-5" />
                   </Button>
@@ -527,12 +545,12 @@ export function ImageUploader({
               )}
               {item.status === 'uploading' && (
                 <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/60 text-xs font-medium text-white">
-                  Uploading...
+                  {messages?.uploading || 'Uploading...'}
                 </div>
               )}
               {item.status === 'error' && (
                 <div className="absolute inset-0 z-10 flex items-center justify-center bg-red-500/70 text-xs font-medium text-white">
-                  Failed
+                  {messages?.failed || 'Failed'}
                 </div>
               )}
               <Button
@@ -540,7 +558,7 @@ export function ImageUploader({
                 variant="destructive"
                 className="absolute top-2 right-2 z-20 h-7 w-7"
                 onClick={() => handleRemove(item.id)}
-                aria-label="Remove image"
+                aria-label={messages?.remove || 'Remove image'}
               >
                 <IconX className="h-4 w-4" />
               </Button>
@@ -549,18 +567,37 @@ export function ImageUploader({
         ))}
 
         {items.length < maxCount && (
-          <div className="group border-border bg-muted/50 hover:border-border hover:bg-muted relative overflow-hidden rounded-xl border border-dashed p-1 shadow-sm transition">
-            <div className="relative overflow-hidden rounded-lg">
+          <div
+            className={cn(
+              'group border-border bg-muted/50 hover:border-primary/50 hover:bg-muted relative overflow-hidden rounded-lg border border-dashed shadow-sm transition',
+              wideDropzone && items.length === 0 ? 'w-full' : 'p-1'
+            )}
+          >
+            <div className="relative w-full overflow-hidden rounded-md">
               <button
                 type="button"
-                className="flex h-32 w-32 flex-col items-center justify-center gap-2"
+                className={cn(
+                  'flex flex-col items-center justify-center gap-2',
+                  wideDropzone && items.length === 0
+                    ? 'h-32 w-full px-4'
+                    : 'h-32 w-32'
+                )}
                 onClick={openFilePicker}
               >
                 <div className="border-border flex h-10 w-10 items-center justify-center rounded-full border border-dashed">
                   <IconUpload className="h-5 w-5" />
                 </div>
-                <span className="text-xs font-medium">Upload</span>
-                <span className="text-primary text-xs">Max {maxSizeMB}MB</span>
+                <span className="text-sm font-medium">
+                  {messages?.upload || 'Upload'}
+                </span>
+                {wideDropzone && items.length === 0 && emptyHint && (
+                  <span className="text-muted-foreground text-center text-xs">
+                    {emptyHint}
+                  </span>
+                )}
+                <span className="text-primary text-xs">
+                  {messages?.maxSize || `Max ${maxSizeMB}MB`}
+                </span>
               </button>
             </div>
           </div>

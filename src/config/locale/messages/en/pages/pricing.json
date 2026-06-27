@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Pricing",
-    "description": "Start with a plan"
+    "title": "ProductPic AI Pricing",
+    "description": "Choose a plan for generating product images"
   },
   "page": {
-    "title": "ShipAny Pricing",
+    "title": "ProductPic AI Pricing",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "title": "Pricing",
-        "description": "Get all features of ShipAny, Ship your AI SaaS startups fast.",
+        "title": "ProductPic AI Pricing",
+        "description": "Choose the credit pack that matches your production volume.",
         "groups": [
           {
             "name": "one-time",
@@ -29,11 +29,11 @@
         "items": [
           {
             "title": "Starter",
-            "description": "Get started with your first SaaS startup.",
+            "description": "Start with your first product image plan.",
             "features_title": "Includes",
             "features": [
               "100 credits, valid for 1 month",
-              "NextJS boilerplate",
+              "AI product studio",
               "SEO-friendly structure",
               "Payment with Stripe",
               "Data storage with Supabase",
@@ -47,21 +47,21 @@
             "original_price": "$199",
             "unit": "",
             "is_featured": false,
-            "tip": "Pay once. Build unlimited projects!",
+            "tip": "Pay once. Generate unlimited product images!",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "starter",
-            "product_name": "ShipAny Boilerplate Starter",
+            "product_name": "ProductPic AI Starter",
             "credits": 100,
             "valid_days": 30,
             "group": "one-time"
           },
           {
             "title": "Standard",
-            "description": "Ship Fast with your SaaS Startups.",
+            "description": "Ship product visuals faster.",
             "label": "Popular",
             "features_title": "Everything in Starter, plus",
             "features": [
@@ -81,21 +81,21 @@
             "original_price": "$299",
             "unit": "",
             "is_featured": true,
-            "tip": "Pay once. Build unlimited projects!",
+            "tip": "Pay once. Generate unlimited product images!",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "standard",
-            "product_name": "ShipAny Boilerplate Standard",
+            "product_name": "ProductPic AI Standard",
             "credits": 200,
             "valid_days": 90,
             "group": "one-time"
           },
           {
             "title": "Premium",
-            "description": "Ship Any AI SaaS Startups.",
+            "description": "Build ecommerce image generation products.",
             "features_title": "Everything in Standard, plus",
             "features": [
               "300 credits, valid for 1 year",
@@ -113,25 +113,25 @@
             "original_price": "$399",
             "unit": "",
             "is_featured": false,
-            "tip": "Pay once. Build unlimited projects!",
+            "tip": "Pay once. Generate unlimited product images!",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "premium",
-            "product_name": "ShipAny Boilerplate Premium",
+            "product_name": "ProductPic AI Premium",
             "credits": 300,
             "valid_days": 365,
             "group": "one-time"
           },
           {
             "title": "Starter",
-            "description": "Get started with your first SaaS startup.",
+            "description": "Start with your first product image plan.",
             "features_title": "Includes",
             "features": [
               "100 credits, valid for 1 month",
-              "NextJS boilerplate",
+              "AI product studio",
               "SEO-friendly structure",
               "Payment with Stripe",
               "Data storage with Supabase",
@@ -145,14 +145,14 @@
             "original_price": "$99",
             "unit": "/ month",
             "is_featured": false,
-            "tip": "Pay monthly. Build unlimited projects!",
+            "tip": "Pay monthly. Generate unlimited product images!",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "starter-monthly",
-            "product_name": "ShipAny Boilerplate Starter Monthly",
+            "product_name": "ProductPic AI Starter Monthly",
             "credits": 100,
             "valid_days": 30,
             "group": "monthly",
@@ -160,7 +160,7 @@
           },
           {
             "title": "Standard",
-            "description": "Ship Fast with your SaaS Startups.",
+            "description": "Ship product visuals faster.",
             "label": "Popular",
             "features_title": "Everything in Starter, plus",
             "features": [
@@ -180,14 +180,14 @@
             "original_price": "$199",
             "unit": "/ month",
             "is_featured": true,
-            "tip": "Pay monthly. Ship Fast with your SaaS Startups.",
+            "tip": "Pay monthly. Ship product visuals faster.",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "standard-monthly",
-            "product_name": "ShipAny Boilerplate Standard Monthly",
+            "product_name": "ProductPic AI Standard Monthly",
             "credits": 200,
             "valid_days": 30,
             "group": "monthly",
@@ -195,7 +195,7 @@
           },
           {
             "title": "Premium",
-            "description": "Ship Any AI SaaS Startups.",
+            "description": "Build ecommerce image generation products.",
             "features_title": "Everything in Standard, plus",
             "features": [
               "300 credits, valid for 1 month",
@@ -213,14 +213,14 @@
             "original_price": "$299",
             "unit": "/ month",
             "is_featured": false,
-            "tip": "Pay monthly. Ship Any AI SaaS Startups.",
+            "tip": "Pay monthly. Build ecommerce image generation products.",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "premium-monthly",
-            "product_name": "ShipAny Boilerplate Premium Monthly",
+            "product_name": "ProductPic AI Premium Monthly",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
@@ -228,11 +228,11 @@
           },
           {
             "title": "Starter",
-            "description": "Get started with your first SaaS startup.",
+            "description": "Start with your first product image plan.",
             "features_title": "Includes",
             "features": [
               "100 credits, valid for 1 year",
-              "NextJS boilerplate",
+              "AI product studio",
               "SEO-friendly structure",
               "Payment with Stripe",
               "Data storage with Supabase",
@@ -246,14 +246,14 @@
             "original_price": "$89",
             "unit": "/ month",
             "is_featured": false,
-            "tip": "Pay annually. Build unlimited projects!",
+            "tip": "Pay annually. Generate unlimited product images!",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "starter-yearly",
-            "product_name": "ShipAny Boilerplate Starter Annually",
+            "product_name": "ProductPic AI Starter Annually",
             "credits": 1200,
             "valid_days": 365,
             "group": "yearly",
@@ -261,7 +261,7 @@
           },
           {
             "title": "Standard",
-            "description": "Ship Fast with your SaaS Startups.",
+            "description": "Ship product visuals faster.",
             "label": "Popular",
             "features_title": "Everything in Starter, plus",
             "features": [
@@ -281,14 +281,14 @@
             "original_price": "$169",
             "unit": "/ month",
             "is_featured": true,
-            "tip": "Pay annually. Ship Fast with your SaaS Startups.",
+            "tip": "Pay annually. Ship product visuals faster.",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "standard-yearly",
-            "product_name": "ShipAny Boilerplate Standard Annually",
+            "product_name": "ProductPic AI Standard Annually",
             "credits": 2400,
             "valid_days": 365,
             "group": "yearly",
@@ -296,7 +296,7 @@
           },
           {
             "title": "Premium",
-            "description": "Ship Any AI SaaS Startups.",
+            "description": "Build ecommerce image generation products.",
             "features_title": "Everything in Standard, plus",
             "features": [
               "300 credits, valid for 1 year",
@@ -314,14 +314,14 @@
             "original_price": "$249",
             "unit": "/ month",
             "is_featured": false,
-            "tip": "Pay annually. Ship Any AI SaaS Startups.",
+            "tip": "Pay annually. Build ecommerce image generation products.",
             "button": {
-              "title": "Get ShipAny",
+              "title": "Open ProductPic AI",
               "url": "/#pricing",
               "icon": "RiFlashlightFill"
             },
             "product_id": "premium-yearly",
-            "product_name": "ShipAny Boilerplate Premium Annually",
+            "product_name": "ProductPic AI Premium Annually",
             "credits": 3600,
             "valid_days": 365,
             "group": "yearly",

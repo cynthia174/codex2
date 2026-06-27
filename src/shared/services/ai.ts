@@ -1,5 +1,6 @@
 import {
   AIManager,
+  EvolinkProvider,
   FalProvider,
   GeminiProvider,
   KieProvider,
@@ -44,6 +45,15 @@ export function getAIManagerWithConfigs(configs: Configs) {
     aiManager.addProvider(
       new GeminiProvider({
         apiKey: configs.gemini_api_key,
+      })
+    );
+  }
+
+  if (configs.evolink_api_key) {
+    aiManager.addProvider(
+      new EvolinkProvider({
+        apiKey: configs.evolink_api_key,
+        baseUrl: configs.evolink_base_url,
       })
     );
   }

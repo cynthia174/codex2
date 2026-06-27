@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny Template Two",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "ProductPic AI",
+    "description": "Generate marketplace-ready product images with AI presets, reference uploads, and commercial crop support.",
+    "keywords": "ecommerce image generator, product image ai, marketplace product photos, ai product visuals"
   },
   "sign": {
     "sign_in_title": "Sign In",

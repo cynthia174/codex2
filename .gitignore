@@ -64,3 +64,8 @@ src/config/db/migrations*
 .source
 
 .chats
+
+# local development artifacts
+.next-dev-*.log
+.next-dev-*.err.log
+\#\# Documentation Index.txt

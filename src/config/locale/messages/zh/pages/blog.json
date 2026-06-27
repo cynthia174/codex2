@@ -1,15 +1,15 @@
 {
   "metadata": {
     "title": "博客",
-    "description": "阅读我们最新的产品功能、解决方案和更新内容。"
+    "description": "阅读我们关于产品功能、使用方法和更新的最新内容"
   },
   "page": {
-    "title": "ShipAny 博客",
+    "title": "ProductPic AI 博客",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "博客",
-        "description": "阅读我们最新的产品功能、解决方案和更新内容。"
+        "description": "阅读我们关于产品功能、使用方法和更新的最新内容"
       }
     }
   },
